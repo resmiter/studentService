@@ -1,4 +1,4 @@
-package com.example.studentservice.ui.send;
+package com.example.studentservice.ui.visitRequest;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.studentservice.R;
 
-public class SendFragment extends Fragment {
+public class VisitRequestFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private VisitRequestViewModel visitRequestViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        visitRequestViewModel =
+                ViewModelProviders.of(this).get(VisitRequestViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_visit_requests, container, false);
+        final TextView textView = root.findViewById(R.id.text_visit_requests);
+        visitRequestViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -1,38 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="navigation_view">
+    tools:showIn="navigation_view"
+    >
 
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/commonGroup"
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_account"
             android:icon="@drawable/ic_action_account"
             android:title="@string/menu_account" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_news"
             android:icon="@drawable/ic_action_news"
             android:title="@string/menu_news" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_check_in" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/menu_tools" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="@string/menu_send" />
-        </menu>
-    </item>
+    <group
+        android:id="@+id/headmanGroup"
+        android:checkableBehavior="single">
+        <item android:title="@string/headman_drawer">
+            <menu>
+                <item
+                    android:id="@+id/nav_visit_requests"
+                    android:icon="@drawable/ic_action_visit_requests"
+                    android:title="@string/menu_visit_requests" />
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/adminGroup"
+        android:checkableBehavior="single">
+        <item android:title="@string/admin_drawer">
+            <menu>
+                <item
+                    android:id="@+id/nav_requests_from_students"
+                    android:icon="@drawable/ic_action_requests_from_students"
+                    android:title="@string/menu_requests_from_students" />
+                <item
+                    android:id="@+id/nav_group_visit_statistics"
+                    android:icon="@drawable/ic_action_group_visit_statistics"
+                    android:title="@string/menu_group_visit_statistics" />
+            </menu>
+        </item>
+    </group>
 
 </menu>

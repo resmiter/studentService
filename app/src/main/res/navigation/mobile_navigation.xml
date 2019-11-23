@@ -3,41 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_news">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/nav_account"
         android:name="com.example.studentservice.ui.account.AccountFragment"
         android:label="@string/menu_account"
         tools:layout="@layout/fragment_account" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_news"
         android:name="com.example.studentservice.ui.news.NewsFragment"
         android:label="@string/menu_news"
         tools:layout="@layout/fragment_news" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.studentservice.ui.checkIn.CheckInFragment"
-        android:label="@string/menu_check_in"
-        tools:layout="@layout/fragment_check_in" />
+        android:id="@+id/nav_visit_requests"
+        android:name="com.example.studentservice.ui.visitRequest.VisitRequestFragment"
+        android:label="@string/menu_visit_requests"
+        tools:layout="@layout/fragment_visit_requests" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.studentservice.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_requests_from_students"
+        android:name="com.example.studentservice.ui.requestFromStudent.RequestFromStudentFragment"
+        android:label="@string/menu_requests_from_students"
+        tools:layout="@layout/fragment_requests_from_students" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.studentservice.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.studentservice.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_group_visit_statistics"
+        android:name="com.example.studentservice.ui.visitStatistics.VisitStatisticsFragment"
+        android:label="@string/menu_group_visit_statistics"
+        tools:layout="@layout/fragment_group_visit_statistics" />
 </navigation>

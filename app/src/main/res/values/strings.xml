@@ -2,15 +2,19 @@
     <string name="app_name">studentService</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Дмитрий Вахрушев</string>
+    <string name="nav_header_subtitle">ОАБ 09.03.01-41</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_report">Сообщить об ошибке</string>
 
     <string name="menu_account">Личный кабинет</string>
     <string name="menu_news">Новости</string>
-    <string name="menu_check_in">Отметится</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_visit_requests">Запросы на посещение</string>
+    <string name="menu_requests_from_students">Запросы от студентов</string>
+    <string name="menu_group_visit_statistics">Посещаемость</string>
+
+    <string name="headman_drawer">Для старосты</string>
+    <string name="admin_drawer">Для админа</string>
+
+
 </resources>

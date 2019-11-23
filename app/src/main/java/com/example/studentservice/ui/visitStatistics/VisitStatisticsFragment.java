@@ -1,4 +1,4 @@
-package com.example.studentservice.ui.checkIn;
+package com.example.studentservice.ui.visitStatistics;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.studentservice.R;
 
-public class CheckInFragment extends Fragment {
+public class VisitStatisticsFragment extends Fragment {
 
-    private CheckInViewModel checkInViewModel;
+    private VisitStatisticsViewModel visitStatisticsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        checkInViewModel =
-                ViewModelProviders.of(this).get(CheckInViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_check_in, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        checkInViewModel.getText().observe(this, new Observer<String>() {
+        visitStatisticsViewModel =
+                ViewModelProviders.of(this).get(VisitStatisticsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_group_visit_statistics, container, false);
+        final TextView textView = root.findViewById(R.id.text_group_visit_statistic);
+        visitStatisticsViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
